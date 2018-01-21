@@ -38,6 +38,7 @@ display-next-prev-post: true
 
 
 defaults:
+permalink: pretty
   -
     scope:
       path: ""
