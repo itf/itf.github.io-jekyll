@@ -14,35 +14,39 @@ home: true
       {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
     {% endif %}
 
-    <div class="post-block">
-        <div class="post-meta">
-          <a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
-          <span class="post-date">
-              {% if site.display-author-front-page %}
-                {% if post.author.name %}
-                  {{ post.author.name }} •
-                {% else %}
-                  {% if site.author.name %}
-                    {{ site.author.name }} •
-                  {% endif %}
-                {% endif %}
-              {% endif %}
-              {{ post.date | date: site.date_format }} • {{ read-time }}
-          </span>
-        </div>
+    <div class="post-container">
         {% if post.img %}
-            <div class="post-thumbnail">
-		        <img  src="{{ site.baseurl }}/img/{{post.img}}">
-	        </div>
+        <div class="post-thumbnail">
+            <img  src="{{ site.baseurl }}/img/{{post.img}}">
+        </div>
         {% endif %}
-      <p>
-      {% if post.summary %}
-        {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% else %}
-        {{ post.excerpt | remove: '<p>' | remove: '</p>'| truncatewords: 50 }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% endif %}
-      </p>
-    </div>
+        <div class="post-block">
+            <div class="post-meta">
+              <a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
+              <span class="post-date">
+                  {% if site.display-author-front-page %}
+                    {% if post.author.name %}
+                      {{ post.author.name }} •
+                    {% else %}
+                      {% if site.author.name %}
+                        {{ site.author.name }} •
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  {{ post.date | date: site.date_format }} • {{ read-time }}
+              </span>
+            </div>
+          <p>
+          <div class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+          {% else %}
+            {{ post.excerpt | remove: '<p>' | remove: '</p>'| truncatewords: 50 }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+          {% endif %}
+          </div>
+          </p>
+        </div>
+      </div>
 
 {% endfor %}
 
