@@ -38,7 +38,7 @@ display-next-prev-post: true
 
 
 defaults:
-permalink: pretty
+  permalink: pretty
   -
     scope:
       path: ""
