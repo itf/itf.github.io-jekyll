@@ -1,6 +1,6 @@
 ---
 title: Led Panel (Iron Curtain 2)
-
+img: panel.jpg
 tag: [Projects, Electronics]
 
 summary: My friends and I built a 30x60 pixels led panel,  using Ws2812b strips.  I programmed the led panel graphics using Python, in a way that makes it easy to combine patterns and functions into new patterns. 

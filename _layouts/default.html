@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+  	{% if page.cover-image %}
+	<div class="cover-image-container">
+		<img alt="Cover image" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+	</div>
+	{% endif %}
     <div class="container-lg px-3 my-5 markdown-body body">
-      {% if site.title and site.title != page.title %}
-      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-      {% endif %}
-      {% include navigation.html %}
-
+        <div class="header-menu">
+          {% if site.title and site.title != page.title %}
+          <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+          {% endif %}
+          {% include navigation.html %}
+        </div>
       {{ content }}
 
       {% if site.github.private != true and site.github.license %}
@@ -22,6 +28,7 @@
         This site is open source. {% github_edit_link "Improve this page" %}.
       </div>
       {% endif %}
+
     </div>
   </body>
 </html>

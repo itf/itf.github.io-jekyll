@@ -112,3 +112,32 @@ nav a.current {
 .body {
   position: relative;
 }
+
+
+.post-thumbnail{
+    display: block;
+    float: none;
+    max-height: 200px;
+    max-width: 250px;
+    width: inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media all and (min-width: 600px) {
+.post-thumbnail{
+    display:inline-block;
+    float: left;
+    width: inherit;
+    max-height: 200px;
+    max-width: 250px;
+    margin-right: 10px;
+
+}
+}
+.post-block{
+    display: inline-block;
+}
+
+.post-thumbnail img{
+    border-radius: 10px;
+}

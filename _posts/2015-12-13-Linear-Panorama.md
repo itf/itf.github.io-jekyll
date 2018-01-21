@@ -1,6 +1,6 @@
 ---
 title: Near mural photography and linear panorama 
-
+img: mural_final.jpg
 tag: [Projects, Photography]
 
 summary: Photographing linear panoramas of murals, in a place with poor light conditions, and short distance to the wall.
