@@ -36,9 +36,9 @@ var_min_read: min read # Text after reading time. Example: 5 min read.
 
 display-next-prev-post: true
 
-
+permalink: pretty
 defaults:
-  permalink: pretty
+  
   -
     scope:
       path: ""
