@@ -153,3 +153,13 @@ nav a.current {
 
     }
 }
+
+@media all and (max-width: 600px) {
+.post-block{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.post-thumbnail{
+    margin-bottom:-1em;
+}
+}
