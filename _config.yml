@@ -1,0 +1,46 @@
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
+theme: jekyll-theme-primer
+
+gems:
+  - jekyll-paginate
+paginate: 10
+paginate_path: "/page-:num/"
+date_format: "%b %-d, %Y"
+baseurl: ""
+disqus-shortname: itadeufa
+github:
+  private: true
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/pages-themes/primer"
+ 
+title: Ivanaf
+description: Ivan Tadeu Ferreira Antunes Filho personal page
+
+var_read: Read # Text after each post summary on the homepage.
+var_newer: Newer
+var_older: Older
+var_next_post: Next post
+var_previous_post: Previous post
+var_less_than_a_minute_read: Less than a minute read
+var_min_read: min read # Text after reading time. Example: 5 min read.
+
+display-next-prev-post: true
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
