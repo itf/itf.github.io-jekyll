@@ -95,7 +95,7 @@ Social events. Easier to go as an mit student. Boston is one of the best cities 
 Positive impact in the world. Ideas global challenge. Social entrepreneurship. Up to 15k.
 
 ## Joe Caruso
-Advocate for entrepreneurs. General input, generalist, brainstorm, talk about founder and technology issues. Very generic resource. jcaruso at bantam group.com.
+Advocate for entrepreneurs. General input, generalist, brainstorm, talk about founder and technology issues. Very generic resource. jcaruso at bantam group.
 
 ## [Maschallenge startup benefits.](https://masschallenge.org/startup/good-benefits)
 Non profit. 0 equity. 1.5M support.  Startups that are ready. Waterhole for the local innovation community.
