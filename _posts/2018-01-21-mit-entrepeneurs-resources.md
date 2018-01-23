@@ -1,6 +1,5 @@
 ---
 title: MIT entrepreneurship resources
-img: panel.jpg
 tag: [MIT]
 
 summary: 

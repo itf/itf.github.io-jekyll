@@ -17,7 +17,7 @@ home: true
     <div class="post-container">
         {% if post.img %}
         <div class="post-thumbnail">
-            <img  src="{{ site.baseurl }}/img/{{post.img}}">
+            <img  src="{{ site.baseurl }}/img/{{post.img}}" alt="{{post.img}}">
         </div>
         {% endif %}
         <div class="post-block">
@@ -36,15 +36,15 @@ home: true
                   {{ post.date | date: site.date_format }} • {{ read-time }}
               </span>
             </div>
-          <p>
           <div class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-          {% else %}
-            {{ post.excerpt | remove: '<p>' | remove: '</p>'| truncatewords: 50 }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-          {% endif %}
+            <p>
+              {% if post.summary %}
+                {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+              {% else %}
+                {{ post.excerpt | remove: '<p>' | remove: '</p>'|  strip_html| truncatewords: 50 }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+              {% endif %}
+            </p>
           </div>
-          </p>
         </div>
       </div>
 

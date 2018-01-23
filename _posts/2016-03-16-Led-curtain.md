@@ -1,5 +1,5 @@
 ---
-title: Led Panel (Iron Curtain 2)
+title: Led Panel
 img: panel.jpg
 tag: [Projects, Electronics]
 
