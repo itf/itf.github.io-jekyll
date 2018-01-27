@@ -8,11 +8,11 @@
   {% if post.tags contains t %}
   <li>
     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+    <span class="date">- {{ post.date | date: "%B %-d, %Y"  }}</span>
     {% if post.summary %}
-    {{ post.summary | strip_html | truncatewords: 15 }}
+    - {{ post.summary | remove: '<p>' | remove: '</p>'|  strip_html | truncatewords: 15 }}
     {% else %}
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    - {{ post.content | remove: '<p>' | remove: '</p>'|  strip_html | truncatewords: 15 }}
     {% endif %}
   </li>
   {% endif %}

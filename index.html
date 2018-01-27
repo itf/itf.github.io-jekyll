@@ -3,17 +3,13 @@ layout: default
 home: true
 ---
 
-
-
 {% for post in paginator.posts %}
-
     {% assign minutes = post.content | number_of_words | divided_by: 180 %}
     {% if minutes == 0 %}
       {% assign read-time = site.var_less_than_a_minute_read %}
     {% else %}
       {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
     {% endif %}
-
     <div class="post-container">
         {% if post.img %}
         <div class="post-thumbnail">
