@@ -18,5 +18,13 @@ The response of each ear based on the direction of the sound is called [Head-rel
 
 It is easy to set up audio pipes using jack. I usually install [Cadence](http://kxstudio.linuxaudio.org/Applications:Cadence) to do so, since it is extremely user friendly. Therefore, if I can setup a simple jack application that uses a simple GUI to decide the location of an audio source and then play the audio on headphones, it should allow me to do things such as multiaudio or having some sound sound like it is moving around me.
 
-## Implementing
+## About the tools
 
+### [JACK](http://www.jackaudio.org/) ([Cadence](http://kxstudio.linuxaudio.org/Applications:Cadence))
+
+> JACK (JACK Audio Connection Kit) refers to an API and two implementations of this API, jack1 and jack2. It provides a basic infrastructure for audio applications to communicate with each other and with audio hardware. Through JACK, users are enabled to build powerful systems for signal processing and music production.  
+
+In other words, Jack provides an easy way to connect the audio from one application to another. Using its C++ library we can easily make a client that can take interface with the audio from other applications.
+
+> Cadence is a set of tools useful for audio production.  
+Cadence is a set of tools that make using JACK much easier. I have never been able to install JACK, nor use it without installing Cadence.
