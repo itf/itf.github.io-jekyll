@@ -5,7 +5,7 @@ title: Portfolio
 <p>In construction.</p> 
 
 
-<p>Different projects I worked on over the years. Some of them really small, some of them quite bad.</p>
+<p>Different projects I worked on over the years.</p>
 
 <div class = "responsive-table">  
 {% assign sorted_projects = site.projects | sort: 'year' |reverse %}
@@ -13,13 +13,9 @@ title: Portfolio
 <div class = "portfolio-project">
 {% if item.img %}
 <div class="project-thumbnail">
-    {% if item.link %}
-        <a href="{{ item.link | prepend: site.baseurl }}">
-    {% endif %}
-    <img  src="{{ site.baseurl }}/img/projects/{{item.img}}" alt="{{item.img}}">
-    {% if item.link %}
-        </a>
-    {% endif %}
+    <a href="{{ site.baseurl }}/img/projects/{{item.img}}">
+       <img  src="{{ site.baseurl }}/img/projects/{{item.img}}" alt="{{item.img}}">
+    </a>
 </div>
 {% endif %}
 {% if item.link %}
