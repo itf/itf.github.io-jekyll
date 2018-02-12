@@ -166,24 +166,42 @@ nav a.current {
 
 .responsive-table{
   display: flex;
-
   align-items: stretch;
   flex-wrap: wrap;
 } 
 
 
 @media (max-width: 480px) {
-    .responsive-table div {
-        max-width: 98%;
+    .responsive-table  > div {
+        width: 98%;
     }
 }
-@media (min-width: 480px) and (max-width: 1080px) {
-    .responsive-table div {
-        max-width: 48%;
+@media (min-width: 480px) and (max-width: 800px) {
+    .responsive-table > div {
+        width: 48%;
     }
 }
-@media (min-width: 1080px) {
-    .responsive-table div {
-        max-width: 23%;
+@media (min-width: 800px) {
+    .responsive-table > div {
+        width: 32%;
     }
 }
+
+.portfolio-project{
+    box-shadow: 0 7px 15px grey;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    margin-right:1%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:5px;
+}
+
+.project-thumbnail img {
+    width: 60%;
+}
+
+.text-center{
+   text-align: center !important;;
+}
+

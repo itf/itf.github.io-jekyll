@@ -39,6 +39,9 @@ display-next-prev-post: true
 kramdown:
   math_engine: nil
   
+collections:
+- projects 
+
 permalink: pretty
 defaults:
   -

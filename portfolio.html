@@ -2,4 +2,34 @@
 layout: page
 title: Portfolio
 ---
-In construction
+<p>In construction.</p> 
+
+
+<p>Different projects I worked on over the years. Some of them really small, some of them quite bad.</p>
+
+<div class = "responsive-table">  
+{% assign sorted_projects = site.projects | sort: 'year' |reverse %}
+{% for item in sorted_projects %}
+<div class = "portfolio-project">
+{% if item.img %}
+<div class="project-thumbnail">
+    {% if item.link %}
+        <a href="{{ item.link | prepend: site.baseurl }}">
+    {% endif %}
+    <img  src="{{ site.baseurl }}/img/projects/{{item.img}}" alt="{{item.img}}">
+    {% if item.link %}
+        </a>
+    {% endif %}
+</div>
+{% endif %}
+{% if item.link %}
+    <a href="{{ item.link | prepend: site.baseurl }}">
+{% endif %}
+<h3 class = "text-center"> {{ item.title}} </h3>
+{% if item.link %}
+    </a>
+{% endif %}
+{{item.content}}
+</div>
+{% endfor %}
+</div>
