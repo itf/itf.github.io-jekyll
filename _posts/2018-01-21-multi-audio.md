@@ -27,4 +27,15 @@ It is easy to set up audio pipes using jack. I usually install [Cadence](http://
 In other words, Jack provides an easy way to connect the audio from one application to another. Using its C++ library we can easily make a client that can take interface with the audio from other applications.
 
 > Cadence is a set of tools useful for audio production.  
+
 Cadence is a set of tools that make using JACK much easier. I have never been able to install JACK, nor use it without installing Cadence.
+
+### [Zita Convolver](https://directory.fsf.org/wiki/Zita-convolver)  
+Install from libzita-convolver.
+
+> Zita convolver is a C++ library implementing a real-time convolution matrix for up to 64 inputs and outputs. It uses multiple partition sizes to provide both low delay and efficient CPU use.
+
+In other words, Zita Convolver is a very fast and simple way to apply an impulse response to audio!
+
+### [QT](https://www.qt.io/) 
+I wanted the tool to have a gui. QT is one that is cross-platform.
