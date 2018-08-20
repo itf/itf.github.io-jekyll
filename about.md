@@ -2,7 +2,11 @@
 layout: page
 title: About
 ---
+
+![Panel ]({{ site.baseurl }}/img/ivan.jpg){: .inline-block}
+
 I am Ivan Tadeu Ferreira Antunes Filho, currently an MEng student in EECS at MIT. I'm really excited about science, technology and photography.  
+
 
 ## Old stuff
 ### Medals   in   Science   Olympiads (2006-2013)
